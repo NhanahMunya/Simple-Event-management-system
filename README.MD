@@ -1,39 +1,113 @@
-Event Management System
-Important to note that the vendor files are not in code for mailer to work so please download that php library first run composer install or composer update, Composer:
+<div id="top">
 
-This project provides a PHP-based solution for managing events. It allows users to create, view, and potentially manage (depending on your implementation) events through a web interface.
+<!-- HEADER STYLE: CLASSIC -->
+<div align="center">
 
-Installation
 
-NB: instructions for database migration are in the database migration FILE
+# SIMPLE-EVENT-MANAGEMENT-SYSTEM
 
-Prerequisites:
-PHP: Ensure you have PHP installed on your system. XAMPP is a convenient option as it bundles PHP with an Apache web server and MySQL database server.
-Database Setup: GOTO MIGRATION DATABASE FILE
+<em>Effortlessly organize events, engage your community today!</em>
 
-Create a database named event_management_system. You can use a database management tool or your web hosting provider's control panel.
-Edit the config.php file to configure database connection details such as host, username, password, and database name.
-Table Creation:
-Execute the necessary SQL statements to create the required tables in the database. These tables might include:
-users (id, name, surname, email, password)
-events (eventId, userId (foreign key referencing users.id), title, description, date_and_time, location, image_path (optional))
-You can find or create these SQL statements based on your specific needs and data model.
-Running the Project
+<!-- BADGES -->
+<img src="https://img.shields.io/github/last-commit/NhanahMunya/Simple-Event-management-system?style=flat&logo=git&logoColor=white&color=0080ff" alt="last-commit">
+<img src="https://img.shields.io/github/languages/top/NhanahMunya/Simple-Event-management-system?style=flat&color=0080ff" alt="repo-top-language">
+<img src="https://img.shields.io/github/languages/count/NhanahMunya/Simple-Event-management-system?style=flat&color=0080ff" alt="repo-language-count">
 
-Start XAMPP: Launch XAMPP and ensure both Apache and MySQL are running.
-Project Location: Place the project files within XAMPP's web server document root directory (typically htdocs or public_html).
-Access the Application: Open your web browser and navigate to http://localhost/your_project_directory/index.php (replace your_project_directory with the actual name of your project folder).
-Usage (Expand based on your project's functionality)
+<em>Built with the tools and technologies:</em>
 
-Users can potentially create accounts, log in, view events, and potentially create or manage events (depending on your implementation).
-The specific actions and permissions will depend on the features you've built into your system.
-License
+<img src="https://img.shields.io/badge/JSON-000000.svg?style=flat&logo=JSON&logoColor=white" alt="JSON">
+<img src="https://img.shields.io/badge/Composer-885630.svg?style=flat&logo=Composer&logoColor=white" alt="Composer">
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=flat&logo=JavaScript&logoColor=black" alt="JavaScript">
+<img src="https://img.shields.io/badge/PHP-777BB4.svg?style=flat&logo=PHP&logoColor=white" alt="PHP">
 
-This project is free to redistribute under a permissive license (specify the license type you choose, e.g., MIT License).
+</div>
+<br>
 
-Additional Notes
+---
 
-Consider using a dependency management tool like Composer for managing PHP libraries and dependencies.
-Implement security best practices, including input validation, secure password hashing, and user authentication mechanisms.
-Unit testing your code would help ensure proper functionality and maintainability.
-Remember to adapt this README.md with specific details of your project's functionality, database structure, and security measures. If you have documentation, provide a link or instructions on how to access it.
+## Table of Contents
+
+- [Overview](#overview)
+- [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Installation](#installation)
+    - [Usage](#usage)
+    - [Testing](#testing)
+
+---
+
+## Overview
+
+The **Simple Event Management System** is a PHP-based tool designed to streamline the creation and management of events through an intuitive web interface.
+
+**Why Simple-Event-management-system?**
+
+This project empowers users to efficiently organize and administer events while prioritizing security and user experience. The core features include:
+
+- 🎟️ **User Authentication:** Secure login and registration processes ensure that only authorized users can manage events.
+- 📅 **Event Management:** Users can create, edit, and delete events, providing a comprehensive tool for personal event organization.
+- 🗄️ **Database Integration:** A structured database setup ensures efficient data management and retrieval.
+- 📧 **Email Notifications:** Integration with PHPMailer allows for reliable communication through registration confirmation emails.
+- 🔒 **Session Management:** Robust session handling enhances security and user experience.
+- 🔑 **Real-time Password Validation:** Ensures users create secure passwords, promoting better security practices.
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+This project requires the following dependencies:
+
+- **Programming Language:** PHP
+- **Package Manager:** Composer
+
+### Installation
+
+Build Simple-Event-management-system from the source and intsall dependencies:
+
+1. **Clone the repository:**
+
+    ```sh
+    ❯ git clone https://github.com/NhanahMunya/Simple-Event-management-system
+    ```
+
+2. **Navigate to the project directory:**
+
+    ```sh
+    ❯ cd Simple-Event-management-system
+    ```
+
+3. **Install the dependencies:**
+
+**Using [composer](https://www.php.net/):**
+
+```sh
+❯ composer install
+```
+
+### Usage
+
+Run the project with:
+
+**Using [composer](https://www.php.net/):**
+
+```sh
+php {entrypoint}
+```
+
+### Testing
+
+Simple-event-management-system uses the {__test_framework__} test framework. Run the test suite with:
+
+**Using [composer](https://www.php.net/):**
+
+```sh
+vendor/bin/phpunit
+```
+
+---
+
+<div align="left"><a href="#top">⬆ Return</a></div>
+
+---
