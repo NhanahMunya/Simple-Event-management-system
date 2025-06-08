@@ -1,4 +1,5 @@
 Event Management System
+Important to note that the vendor files are not in code for mailer to work so please download that php library first run composer install or composer update, Composer:
 
 This project provides a PHP-based solution for managing events. It allows users to create, view, and potentially manage (depending on your implementation) events through a web interface.
 
